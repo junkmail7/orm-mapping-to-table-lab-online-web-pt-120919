@@ -1,5 +1,5 @@
 class Student
-  attr_accessor :grade, :name,
+  attr_accessor :name, :grade
   attr_reader :id
 
   def initialize(grade, name, id = nil)
@@ -13,7 +13,7 @@ class Student
       CREATE TABLE IF NOT EXISTS songs (
         id INTEGER PRIMARY KEY,
         name TEXT,
-        album TEXT
+        grade INTEGER
         )
         SQL
     DB[:conn].execute(sql)
